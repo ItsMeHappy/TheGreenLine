@@ -1112,9 +1112,25 @@ PrefabInstance:
       propertyPath: resourceManager
       value: 
       objectReference: {fileID: 1734385162}
+    - target: {fileID: 6493527875465681366, guid: c0b0975907b68cf43bdbbf58a9a13e47, type: 3}
+      propertyPath: Resources.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493527875465681366, guid: c0b0975907b68cf43bdbbf58a9a13e47, type: 3}
+      propertyPath: Resources.Array.data[0]
+      value: Steel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493527875465681366, guid: c0b0975907b68cf43bdbbf58a9a13e47, type: 3}
+      propertyPath: Resources.Array.data[1]
+      value: Wood
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493527875465681366, guid: c0b0975907b68cf43bdbbf58a9a13e47, type: 3}
+      propertyPath: Resources.Array.data[2]
+      value: Iron
+      objectReference: {fileID: 0}
     - target: {fileID: 8279513540116974358, guid: c0b0975907b68cf43bdbbf58a9a13e47, type: 3}
       propertyPath: m_Name
-      value: Send Resources
+      value: TradeManager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -9,15 +11,20 @@ public class ResourceSender : MonoBehaviour
     public GameObject SendMenu;
     public GameObject ResourceManager;
     public ResourceManager resourceManager;
-
-    public GameObject ResourceBoat;
-
     public bool BoatSent;
+
+    public bool PlayerHasSent;
+
+    public float Timer;
+    public int SendTime;
+
+    public List<string> Resources = new List<string>();
 
     void Start()
     {
         resourceManager = ResourceManager.GetComponent<ResourceManager>();
         SendMenu.SetActive(false);
+        
     }
 
     
@@ -37,7 +44,7 @@ public class ResourceSender : MonoBehaviour
         SendMenu.SetActive(false);
     }
 
-    public void SendBoat()
+    public void SendResource1()
     {
             BoatSent = true;
             Debug.Log("Steel Sent");
@@ -46,19 +53,29 @@ public class ResourceSender : MonoBehaviour
     }
     
 
-    //public void SendR2()
+    
     //{
         
     //}
 
-    //public void SendR3()
+    //public void SendRersource3()
     //{
 
     //}
 
-        public void RecieveResources()
-        {
+    public void RecieveResources()
+    {
+            if(PlayerHasSent == true && Timer == SendTime)
+            {
+                
+            }
+    }
 
-        }
+    public enum ResourceType
+    {
+        R1,
+        R2,
+        R3
+    }
 
 }
